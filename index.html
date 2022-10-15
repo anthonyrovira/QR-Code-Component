@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: hsl(212, 45%, 89%);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .layout {
+        display: grid;
+        place-content: center;
+        height: inherit;
+      }
+
+      .card {
+        width: 220px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: scale 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        cursor: pointer;
+        scale: 1.1;
+      }
+
+      .card__picture img {
+        border-radius: 8px;
+        width: 200px;
+        height: auto;
+        margin: auto;
+      }
+
+      .card__legend {
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+        padding: 0 2px;
+      }
+
+      .card__legend__mainText {
+        font-size: 15px;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+      }
+
+      .card__legend__subText {
+        font-size: 12px;
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+      }
+
+      footer {
+        font-family: "Outfit", sans-serif;
+        padding: 10px;
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="layout">
+      <article class="card">
+        <div class="card__picture">
+          <img src="./images/image-qr-code.png" alt="QR Code" />
+        </div>
+        <div class="card__legend">
+          <p class="card__legend__mainText">
+            Improve your front-end skills by building projects
+          </p>
+          <p class="card__legend__subText">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/AnthonyRoviraJS">Anthony Rovira</a>.
+    </footer>
+  </body>
+</html>
